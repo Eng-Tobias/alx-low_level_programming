@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Set the path to the directory containing your C files
+CFILE_PATH="/alx-low_level_programming/0x00-hello_world"
+
+# Change directory to where the C files are located
+cd "$CFILE_PATH" || exit
+
+# Compile the C file specified by $CFILE into an object file
+gcc -c "$CFILE"
