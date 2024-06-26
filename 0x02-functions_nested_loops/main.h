@@ -13,6 +13,7 @@ int print_last_digit(int n);
 void jack_bauer(void);
 void times_table(void);
 int add(int a, int b);
+void print_to_98(int n);
 int _putchar(char c);
 
 #endif /* MAIN_H */
