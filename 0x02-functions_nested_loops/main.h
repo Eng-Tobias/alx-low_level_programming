@@ -18,5 +18,6 @@ void print_times_table(int n);
 int _putchar(char c);
 int sum_multiples(void);
 void print_fibonacci(void);
+void print_number(unsigned long int n);
 
 #endif /* MAIN_H */
