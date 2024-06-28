@@ -15,5 +15,6 @@ void print_diagonal(int n);
 void print_square(int size);
 void print_triangle(int size);
 long largest_prime_factor(long number);
+void print_number(int n);
 
 #endif /* MAIN_H */
