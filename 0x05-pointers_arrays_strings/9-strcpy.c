@@ -17,5 +17,5 @@ i++;
 }
 dest[i] = '\0'; /* Don't forget to copy the null byte */
 
-return dest;
+return (dest);
 }
