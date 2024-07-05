@@ -28,5 +28,5 @@ j++;
 /* Null-terminate the concatenated string */
 dest[i] = '\0';
 
-return dest;
+return (dest);
 }
