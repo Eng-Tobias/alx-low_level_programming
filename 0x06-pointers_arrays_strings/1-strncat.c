@@ -30,5 +30,5 @@ i++;
 /* Null-terminate dest */
 dest[dest_len] = '\0';
 
-return dest;
+return (dest);
 }
