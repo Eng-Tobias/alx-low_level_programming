@@ -1,15 +1,14 @@
-/* main.c */
-
-#include "main.h"  /* Include the header file where your functions are declared */
+#include "main.h"
+#include <stdio.h>
 
 int main(void)
 {
-char dest[50] = "Hello ";
-char *src = "world!";
+char s1[98] = "Hello ";
+char s2[] = "World!\n";
+char *ptr;
 
-_strcat(dest, src);  /* Call your _strcat function from the static library */
+ptr = _strcat(s1, s2);
+printf("%s", ptr);
 
-printf("%s\n", dest);  /* Print the concatenated string */
-
- return 0;
+return (0);
 }
