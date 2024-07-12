@@ -1,0 +1,66 @@
+for func in _putchar _islower _isalpha _abs _isupper _isdigit _strlen _puts _strcpy _atoi _strcat _strncat _strncpy _strcmp _memset _memcpy _strchr _strspn _strpbrk _strstr
+do
+echo "int ${func}(int c)" > ${func}.c
+echo "{" >> ${func}.c
+echo "return (0);" >> ${func}.c
+echo "}" >> ${func}.c
+done
+
+echo "void _puts(char *s)" > _puts.c
+echo "{" >> _puts.c
+echo "}" >> _puts.c
+
+echo "char *_strcpy(char *dest, char *src)" > _strcpy.c
+echo "{" >> _strcpy.c
+echo "return (dest);" >> _strcpy.c
+echo "}" >> _strcpy.c
+
+echo "int _atoi(char *s)" > _atoi.c
+echo "{" >> _atoi.c
+echo "return (0);" >> _atoi.c
+echo "}" >> _atoi.c
+
+echo "char *_strcat(char *dest, char *src)" > _strcat.c
+echo "{" >> _strcat.c
+echo "return (dest);" >> _strcat.c
+echo "}" >> _strcat.c
+
+echo "char *_strncat(char *dest, char *src, int n)" > _strncat.c
+echo "{" >> _strncat.c
+echo "return (dest);" >> _strncat.c
+echo "}" >> _strncat.c
+
+echo "char *_strncpy(char *dest, char *src, int n)" > _strncpy.c
+echo "{" >> _strncpy.c
+echo "return (dest);" >> _strncpy.c
+echo "}" >> _strncpy.c
+
+echo "char *_memset(char *s, char b, unsigned int n)" > _memset.c
+echo "{" >> _memset.c
+echo "return (s);" >> _memset.c
+echo "}" >> _memset.c
+
+echo "char *_memcpy(char *dest, char *src, unsigned int n)" > _memcpy.c
+echo "{" >> _memcpy.c
+echo "return (dest);" >> _memcpy.c
+echo "}" >> _memcpy.c
+
+echo "char *_strchr(char *s, char c)" > _strchr.c
+echo "{" >> _strchr.c
+echo "return (s);" >> _strchr.c
+echo "}" >> _strchr.c
+
+echo "unsigned int _strspn(char *s, char *accept)" > _strspn.c
+echo "{" >> _strspn.c
+echo "return (0);" >> _strspn.c
+echo "}" >> _strspn.c
+
+echo "char *_strpbrk(char *s, char *accept)" > _strpbrk.c
+echo "{" >> _strpbrk.c
+echo "return (s);" >> _strpbrk.c
+echo "}" >> _strpbrk.c
+
+echo "char *_strstr(char *haystack, char *needle)" > _strstr.c
+echo "{" >> _strstr.c
+echo "return (haystack);" >> _strstr.c
+echo "}" >> _strstr.c
