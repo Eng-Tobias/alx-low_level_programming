@@ -3,11 +3,11 @@
 #include "main.h"
 
 /**
-* main - Calculates the minimum number of coins to make change for an amount of money.
+* main - Calculates the minimum number of coins to make change.
 * @argc: Number of arguments passed to the program.
-* @argv: Array of arguments passed to the program (argv[1] should be the amount in cents).
+* @argv: Array of arguments passed to the program.
 *
-* Return: 0 if successful, 1 if number of arguments is not 1 or if the amount is negative.
+* Return: 0 if successful, 1 if number of arguments is not 1 or negative.
 */
 int main(int argc, char *argv[])
 {
