@@ -36,7 +36,7 @@ free(grid[j]);
 free(grid);
 return (NULL);
 }
-        
+
 /* Initialize each element to 0 */
 for (j = 0; j < width; j++)
 grid[i][j] = 0;
