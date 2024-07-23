@@ -1,0 +1,9 @@
+# Structures and Typedefs
+
+This directory contains C code examples demonstrating the use of structures and typedefs.
+
+## Files
+
+- `dog.h`: Header file defining the `struct dog` type.
+- `1-init_dog.c`: Implementation of the `init_dog` function which initializes a `struct dog` variable.
+- `1-main.c`: Main program to test the `init_dog` function.
