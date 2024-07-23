@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+/* Function prototype */
+int _putchar(char c);
+
+int main(void)
+{
+/* Example usage of _putchar */
+_putchar('H');
+_putchar('i');
+_putchar('\n');
+
+return (0);
+}
+
+/* Definition of _putchar */
+int _putchar(char c)
+{
+return (putchar(c));
+}
