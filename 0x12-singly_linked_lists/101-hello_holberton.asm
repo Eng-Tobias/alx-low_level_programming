@@ -1,17 +1,17 @@
 section .data
-hello_msg db 'Hello, Holberton', 0    ; Null-terminated string for printf
+    hello db 'Hello, Holberton', 10  ; The string to print with a newline character
 
 section .text
-extern printf
-global _start
+    extern printf
+    global main
+    global _start
 
 _start:
-; Prepare arguments for printf
-mov rdi, hello_msg  ; Pointer to the format string
-call printf          ; Call printf
+    ; Set up the arguments for printf
+    mov rdi, hello         ; First argument: the format string
+    call printf            ; Call printf function
 
-; Exit the program
-; Exit code 0
-mov rax, 60          ; syscall: exit
-xor rdi, rdi         ; status: 0
-syscall
+    ; Exit the program
+    mov rax, 60            ; The system call for exit
+    xor rdi, rdi           ; Exit code 0
+    syscall
