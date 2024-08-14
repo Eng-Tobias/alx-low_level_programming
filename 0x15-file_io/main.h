@@ -5,6 +5,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 
+void print_elf_header(const char *filename);
 int _putchar(char c);
 int append_text_to_file(const char *filename, char *text_content);
 int create_file(const char *filename, char *text_content);
