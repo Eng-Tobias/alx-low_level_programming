@@ -37,8 +37,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value) {
     new_node->next = ht->array[index];
     ht->array[index] = new_node;
 
-    /* Insert into the sorted linked list */
-    if (!ht->shead) { /* If the list is empty */
+    if (!ht->shead) {
         new_node->snext = NULL;
         new_node->sprev = NULL;
         ht->shead = new_node;
@@ -49,17 +48,17 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value) {
             current = current->snext;
         }
 
-        if (!current) { /* Insert at the end */
+        if (!current) {
             ht->stail->snext = new_node;
             new_node->sprev = ht->stail;
             new_node->snext = NULL;
             ht->stail = new_node;
-        } else if (current == ht->shead) { /* Insert at the beginning */
+        } else if (current == ht->shead) {
             new_node->snext = ht->shead;
             new_node->sprev = NULL;
             ht->shead->sprev = new_node;
             ht->shead = new_node;
-        } else { /* Insert in the middle */
+        } else {
             new_node->snext = current;
             new_node->sprev = current->sprev;
             current->sprev->snext = new_node;
@@ -67,7 +66,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value) {
         }
     }
 
-    return 1; /* Successfully added */
+    return 1;
 }
 
 /* Function to get an element from the sorted hash table */
@@ -82,7 +81,7 @@ char *shash_table_get(const shash_table_t *ht, const char *key) {
         node = node->next;
     }
 
-    return NULL; /* Not found */
+    return NULL;
 }
 
 /* Function to print the sorted hash table */

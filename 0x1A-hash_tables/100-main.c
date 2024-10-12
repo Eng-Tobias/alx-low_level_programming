@@ -1,55 +1,35 @@
+#include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
 #include "hash_tables.h"
 
+/**
+ * main - check the code
+ *
+ * Return: Always EXIT_SUCCESS.
+ */
 int main(void)
 {
-    hash_table_t *ht;
-    char *value1;
-    char *value2;
+    shash_table_t *ht;
 
-    ht = hash_table_create(1024);
-    if (ht == NULL)
-    {
-        fprintf(stderr, "Error creating hash table\n");
-        return (1);
-    }
-
-    /* Testing adding key-value pairs */
-    if (shash_table_set(ht, "key1", "value1") == 0)
-    {
-        printf("Error adding key1\n");
-    }
-    if (shash_table_set(ht, "key2", "value2") == 0)
-    {
-        printf("Error adding key2\n");
-    }
-
-    /* Testing retrieving values */
-    value1 = shash_table_get(ht, "key1");
-    if (value1 != NULL)
-    {
-        printf("Retrieved key1: %s\n", value1);
-    }
-    else
-    {
-        printf("Key1 not found\n");
-    }
-
-    value2 = shash_table_get(ht, "key2");
-    if (value2 != NULL)
-    {
-        printf("Retrieved key2: %s\n", value2);
-    }
-    else
-    {
-        printf("Key2 not found\n");
-    }
-
-    /* Testing printing the hash table */
-    printf("Current hash table:\n");
+    ht = shash_table_create(1024);
+    shash_table_set(ht, "y", "0");
     shash_table_print(ht);
-
-    /* Cleanup */
-    shash_table_delete(ht);
-    return (0);
+    shash_table_set(ht, "j", "1");
+    shash_table_print(ht);
+    shash_table_set(ht, "c", "2");
+    shash_table_print(ht);
+    shash_table_set(ht, "b", "3");
+    shash_table_print(ht);
+    shash_table_set(ht, "z", "4");
+    shash_table_print(ht);
+    shash_table_set(ht, "n", "5");
+    shash_table_print(ht);
+    shash_table_set(ht, "a", "6");
+    shash_table_print(ht);
+    shash_table_set(ht, "m", "7");
+    shash_table_print(ht);
+    shash_table_print_rev(ht);
+        shash_table_delete(ht);
+    return (EXIT_SUCCESS);
 }
