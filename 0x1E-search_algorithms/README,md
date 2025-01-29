@@ -1,0 +1,23 @@
+# Search Algorithms
+
+This project focuses on implementing and understanding basic search algorithms in C. The primary objective is to explore how search algorithms work and practice implementing them in a structured way.
+
+## Files in the Repository
+
+1. **`search_algos.h`**
+   - Header file containing function prototypes for the search algorithms implemented in this project.
+
+2. **`linear_search.c`**
+   - Implements the `linear_search` function, which searches for a value in an array of integers using the Linear Search algorithm.
+
+3. **`binary_search.c`**
+   - Implements the `binary_search` function, which searches for a value in a sorted array of integers using the Binary Search algorithm.
+
+## Function Details
+
+### Linear Search
+
+- **Prototype:**
+  ```c
+  int linear_search(int *array, size_t size, int value);
+
